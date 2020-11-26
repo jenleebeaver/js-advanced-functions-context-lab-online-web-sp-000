@@ -53,6 +53,7 @@ let hoursWorkedOnDate = function(soughtDate){
   return (clockOut.hour - clockIn.hour)/100
 }
 
+//reminder parseFloat() returns a value that will convert into a string
 let wagesEarnedOnDate = function(dateSought){
   let rawWage = hoursWorkedOnDate(dateSought) = this.payPerHour
   return parseFloat(rawWage)
