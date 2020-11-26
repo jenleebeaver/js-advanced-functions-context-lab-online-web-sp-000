@@ -45,6 +45,10 @@ let hoursWorkedOnDate = function(soughtDate){
   let clockIn = this.timeInEvents.find(function(e){
     return e.date === soughtDate
   })
+
+  let clockOut = this.timeOutEvents.find(function(e){
+    return e.date === soughtDate
+  })
 }
 /*
  We're giving you this function. Take a look at it, you might see some usage
