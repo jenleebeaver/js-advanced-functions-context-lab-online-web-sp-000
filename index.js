@@ -17,7 +17,7 @@ let createEmployeeRecords = function(employeeRowData){
 }
 
 //reminder that we are using this as our name - an explicit override
-let createTimeInEvent = function(employee, dateStamp){
+let createTimeInEvent = function(dateStamp){
     let [date, hour] = dateStamp.split(' ')
 
     this.timeInEvents.push({
