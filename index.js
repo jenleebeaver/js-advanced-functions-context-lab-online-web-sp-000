@@ -16,16 +16,17 @@ let createEmployeeRecords = function(employeeRowData){
   })
 }
 
+//reminder that we are using this as our name - an explicit override
 let createTimeInEvent = function(employee, dateStamp){
     let [date, hour] = dateStamp.split(' ')
 
-    employee.timeInEvents.push({
+    this.timeInEvents.push({
         type: "TimeIn",
         hour: parseInt(hour, 10),
         date,
     })
 
-    return employee
+    return this
 }
 /*
  We're giving you this function. Take a look at it, you might see some usage
