@@ -43,7 +43,7 @@ let createTimeOutEvent = function(dateStamp){
 
 let hoursWorkedOnDate = function(soughtDate){
   let clockIn = this.timeInEvents.find(function(e){
-    
+    return e.date === soughtDate
   })
 }
 /*
