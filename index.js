@@ -49,6 +49,8 @@ let hoursWorkedOnDate = function(soughtDate){
   let clockOut = this.timeOutEvents.find(function(e){
     return e.date === soughtDate
   })
+
+  return (clockOut.hour - clockIn.hour)/100
 }
 /*
  We're giving you this function. Take a look at it, you might see some usage
